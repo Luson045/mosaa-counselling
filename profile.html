@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.a_home {
+  color: white;
+  text-decoration: none;
+}
+.a{
+  max-width: 100%;
+  height: auto;
+}
+.b{
+  max-width: 70%;
+  height: auto;
+}
+.home {
+  background-color: blue; 
+  float:left;
+  padding: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 20px;
+  min-width: 50px;
+}
+.home:hover {
+  background-color: darkblue;
+}
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: darkblue;
+}
+
+.dropdown {
+  background-color: black;
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 100px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+.bar{
+  background-color: black;
+  padding: 15px;
+  font-size: 12px;
+}
+.a_no{
+  background-color:grey;
+  text-align:right;
+  padding: 8px;
+  font-size: 10px;
+}
+.serve{
+  float:left;
+  background-color:darkblue;
+}
+.a1{
+  background-color:white;
+  border-style:solid;
+  border-color: blue;
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+}
+.show3{
+  float:left;
+  position:relative;
+}
+.total{
+  float:left;
+  background-color:cyan;
+  padding:20px 30px;
+}
+.filled{
+  float:left;
+  background-color:lightgreen;
+  padding:20px 30px;
+}
+.unfilled{
+  float:left;
+  background-color:red;
+  padding:20px 30px;
+}
+.lock{
+  float:left;
+  background-color:purple;
+  padding:20px 30px;
+}
+.blank{
+  float:left;
+  background-color:white;
+  padding: 10px 30px;
+}
+.b{
+  float:center;
+  max-width: 80%;
+  height: auto;
+}
+.contact{
+  float:left;
+}
+.notice{
+  float:right;
+  position:relative;
+}
+.letter,.view{
+  background-color:grey;
+  border-style:solid;
+  border-color:gray;
+}
+
+.contact_us{
+  background-color:black;
+  border-style:solid;
+  border-color:black;
+}
+
+</style>
+<title>JoSAA trial webpage</title>
+</head>
+<body>
+<div class="show">
+<img src="./images/main/header_main.png"  class="a"  id="a">
+</div>
+<div class="home">
+  <a href="./main.html" class="a_home">Home</a>
+</div>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Welcome Your Name</button>
+<div id="myDropdown" class="dropdown-content">
+   <a href="./change.html">Change Password</a>
+   <a href="./login.html">Logout</a>
+</div>
+ </div>
+<div class="bar">
+</div>
+<div  class="a_no"> 
+  <a >JEE MAINS/ADV APPLICATION NO.{your application no.}</a>
+</div>
+<div class="all">
+  <div class="serve">
+    <h4 style="color:white;font-size:100%;">Available Services</h4>
+    <a class="a1" href="./profile.html">Candidate Profile</a>
+    <a class="a1" href="./available.html">Choice Available</a>
+    <a class="a1" href="./fill.html">Choice Filling</a>
+    <a class="a1" href="./lock.html">Choice Locking</a>
+    <a class="a1" href="./view.html">View Mock Seat Allocation</a>
+    <a class="a1" href="./print.html">Print Filled Choice(s) Letter</a>
+    <div class="letter">
+      <h4 style="color:white;font-size:100%;">System Generated Letters</h4>
+      <a href="./letter.html">View/Download Letter</a>
+    </div>
+    <div class="view">
+      <h4 style="color:white;font-size:100%;">View Contact Details</h4>
+      <a href="#" >View Contact Details</a>
+    </div>
+    <div class="contact_us">
+      <h4 style="color:white;font-size:100%;" >Contact Us</h4>
+      <a href="#" style="color:blue;">IIT contact</a>
+      <a href="#" style="color:blue;">NIT contact</a>
+      <a href="https://github.com/Luson045" style="color:blue;">MY contact</a>
+    </div>
+  </div>
+  <div class="blank">
+  </div>
+  <div class="show">
+    <h4 style="color:red;">THE BLANK SPACES WILL BE FILLED BY DEFAULT, YOU DONT HAVE TO FILL ANYTHING!!</h4>
+    <img src="./images/profile/candidate.png"  class="b">
+  </div>
+</div>
+<div class="credit">
+<h2 style="color:red;">IMPORTANT:</h2>
+<h3 style="color:blue;">THIS WEBSITE IS BY NO MEANS, MADE FOR MISINFORMATION OR FRAUD. IT'S SOLE PURPOSE IS TO MAKE  PEOPLE AWARE OF HOW THE  COUNSELLING PROCESS LOOKS LIKE, WHERE TO CLICK AND ALL THAT.</h3>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
