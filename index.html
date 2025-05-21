@@ -1,252 +1,820 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-.a_home {
-  color: white;
-  text-decoration: none;
-}
-.a{
-  max-width: 100%;
-  height: auto;
-}
-.b{
-  max-width: 70%;
-  height: auto;
-}
-.home {
-  background-color: blue; 
-  float:left;
-  padding: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 5px 20px;
-  min-width: 50px;
-}
-.home:hover {
-  background-color: darkblue;
-}
-.dropbtn {
-  background-color: black;
-  color: white;
-  padding: 4px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: darkblue;
-}
-
-.dropdown {
-  background-color: black;
-  float: right;
-}
-
-.dropdown-content {
-  display: none;
-  background-color: #f1f1f1;
-  min-width: 100px;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 5px 20px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-.bar{
-  background-color: black;
-  padding: 15px;
-  font-size: 12px;
-}
-.a_no{
-  background-color:grey;
-  text-align:right;
-  padding: 8px;
-  font-size: 10px;
-}
-.serve{
-  float:left;
-  background-color:darkblue;
-}
-.a1{
-  background-color:white;
-  border-style:solid;
-  border-color: blue;
-  color: black;
-  padding: 5px 5px;
-  text-decoration: none;
-  display: block;
-}
-.show3{
-  float:left;
-  position:relative;
-}
-.total{
-  float:left;
-  background-color:cyan;
-  padding:20px 30px;
-}
-.filled{
-  float:left;
-  background-color:lightgreen;
-  padding:20px 30px;
-}
-.unfilled{
-  float:left;
-  background-color:red;
-  padding:20px 30px;
-}
-.lock{
-  float:left;
-  background-color:purple;
-  padding:20px 30px;
-}
-.blank{
-  float:left;
-  background-color:white;
-  padding: 10px 10px;
-}
-.b{
-  float:center;
-  max-width: 80%;
-  height: auto;
-}
-.contact{
-  float:left;
-}
-.notice{
-  float:right;
-  position:relative;
-}
-.letter,.view{
-  background-color:grey;
-  border-style:solid;
-  border-color:gray;
-}
-
-.contact_us{
-  background-color:black;
-  border-style:solid;
-  border-color:black;
-}
-
-</style>
-<title>JoSAA trial webpage</title>
-</head>
-<body>
-<div class="show">
-<img src="./images/main/header_main.png"  class="a"  id="a">
-</div>
-<div class="home">
-  <a href="./index.html" class="a_home">Home</a>
-</div>
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Welcome Your Name</button>
-<div id="myDropdown" class="dropdown-content">
-   <a href="#">Change Password</a>
-   <a href="#">Logout</a>
-</div>
- </div>
-<div class="bar">
-</div>
-<div  class="a_no"> 
-  <a >JEE MAINS/ADV APPLICATION NO.{your application no.}</a>
-</div>
-<div class="all">
-  <div class="serve">
-    <h4 style="color:white;font-size:100%;">Available Services</h4>
-    <a class="a1" href="./profile.html">Candidate Profile</a>
-    <a class="a1" href="./available.html">Choice Available</a>
-    <a class="a1" href="./fill.html">Choice Filling</a>
-    <a class="a1" href="./lock.html">Choice Locking</a>
-    <a class="a1" href="./view.html">View Mock Seat Allocation</a>
-    <a class="a1" href="./predictor/enlisted_institutes.txt">Print Filled Choice(s) Letter</a>
-    <div class="letter">
-      <h4 style="color:white;font-size:100%;">System Generated Letters</h4>
-      <a href="./letter.html">View/Download Letter</a>
-    </div>
-    <div class="view">
-      <h4 style="color:white;font-size:100%;">View Contact Details</h4>
-      <a href="#" >View Contact Details</a>
-    </div>
-    <div class="contact_us">
-      <h4 style="color:white;font-size:100%;" >Contact Us</h4>
-      <a href="#" style="color:blue;">IIT contact</a>
-      <a href="#" style="color:blue;">NIT contact</a>
-      <a href="https://github.com/Luson045" style="color:blue;">MY contact</a>
-    </div>
-  </div>
-  <div class="show3">
-    <div class="first">
-    <h3>Current Choice Filling & Locking Status</h3>
-      <div class="blank">
-      </div>
-      <div class="total">
-        <h5 style="color:white;">Total Available Choices</h5>
-        <h3 style="color:white;">515</h3>
-        <a>as per 2023</a>
-      </div>
-      <div class="blank">
-      </div>
-      <div class="filled">
-        <h5 style="color:white; ">Filled Choice</h5>
-        <h3 style="color:white; ">??</h3>
-        <a>no of filled choice will occur</a>
-      </div>
-      <div class="blank">
-      </div>
-      <div class="unfilled">
-        <h5 style="color:white;">Unfilled Choices</h5>
-        <h5 style="color:white;">Total-Filled</h5>
-        <a>(doesn't matter much)</a>
-      </div>
-      <div class="blank">
-      </div>
-      <div class="lock">
-        <h5 style="color:white; ">Choice Locking Status</h5>
-        <h3 style="color:white; ">No need </h3>
-        <a>dont lock (suggestion)</a>
-      </div>
-    </div>
-  </div>
-</div>
-<br>
-<div class="conclude">
-  <div class="show">
-   <img src="./images/notice/notice.png"  class="b">
-  </div>
-</div>
-<div class="credit">
-<h2 style="color:red;">IMPORTANT:</h2>
-<h3 style="color:blue;">THIS WEBSITE IS BY NO MEANS, MADE FOR MISINFORMATION OR FRAUD. IT'S SOLE PURPOSE IS TO MAKE  PEOPLE AWARE OF HOW THE  COUNSELLING PROCESS LOOKS LIKE, WHERE TO CLICK AND ALL THAT.</h3>
-</div>
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoSAA - Mock Seat Allocation Authority 2025</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background-color: #f4f4f4;
+    }
+    
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+    }
+    
+    .logo img {
+      width: 120px;
+      height: auto;
+    }
+    
+    .header-text {
+      flex-grow: 1;
+      text-align: center;
+    }
+    
+    .header-text h1 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+    
+    .header-text p {
+      color: #555;
+      font-size: 16px;
+    }
+    
+    .help-section {
+      display: flex;
+      align-items: center;
+    }
+    
+    .help-icon {
+      color: red;
+      font-size: 24px;
+      margin-right: 5px;
+    }
+    
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      background-color: #000;
+      padding: 10px 20px;
+      color: white;
+    }
+    
+    .home-btn {
+      background-color: blue;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .home-btn a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .home-btn:hover {
+      background-color: darkblue;
+    }
+    
+    .welcome-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropbtn {
+      background-color: black;
+      color: white;
+      padding: 8px 15px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .dropbtn:hover {
+      background-color: #333;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    
+    .show {
+      display: block;
+    }
+    
+    .app-info {
+      background-color: #eee;
+      padding: 5px 20px;
+      font-size: 12px;
+      text-align: right;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 15px 0;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px;
+    }
+    
+    .menu-item {
+      padding: 10px 15px;
+      margin: 5px;
+      background-color: #fff;
+      border: 1px solid blue;
+      color: blue;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    
+    .menu-item:hover {
+      background-color: blue;
+      color: white;
+    }
+    
+    .menu-item.active {
+      background-color: blue;
+      color: white;
+    }
+    
+    .content-area {
+      padding: 20px;
+    }
+    
+    .filter-section {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    
+    .filter-section h2 {
+      color: #444;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+    
+    .filter-row {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    
+    select, input {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      flex-grow: 1;
+    }
+    
+    .filter-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+    
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    
+    .btn-primary {
+      background-color: #0d6efd;
+      color: white;
+    }
+    
+    .btn-danger {
+      background-color: #dc3545;
+      color: white;
+    }
+    
+    .btn-success {
+      background-color: #198754;
+      color: white;
+    }
+    
+    .btn:hover {
+      opacity: 0.9;
+    }
+    
+    .action-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    
+    .footer {
+      margin-top: 30px;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-top: 1px solid #ddd;
+    }
+    
+    .download-section {
+      margin-bottom: 20px;
+    }
+    
+    .download-section a {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #0d6efd;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    
+    .note {
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+    
+    .important-note {
+      padding: 15px;
+      background-color: #f8d7da;
+      border: 1px solid #f5c2c7;
+      border-radius: 4px;
+      color: #842029;
+      font-weight: bold;
+    }
+    
+    /* Simulator specific styles */
+    .step {
+      display: none;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    
+    .step.active {
+      display: block;
+    }
+    
+    .priority-list {
+      list-style-type: none;
+      margin-top: 15px;
+    }
+    
+    .priority-list li {
+      padding: 10px;
+      background: #f0f0f0;
+      margin: 5px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 4px;
+    }
+    
+    .result {
+      background: #d7fcd4;
+      padding: 15px;
+      border: 1px solid green;
+      border-radius: 4px;
+      margin-top: 15px;
+    }
+    
+    @media (max-width: 768px) {
+      .filter-row {
+        flex-direction: column;
+      }
+      
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
       }
     }
-  }
-}
-</script>
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <div class="logo">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNDAgOTAiPgogIDxwYXRoIGQ9Ik0yMCAxMEg3MHY2MEgyMFoiIGZpbGw9IiMwMDYzYTAiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDx0ZXh0IHg9IjI1IiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSJ3aGl0ZSI+TW9TQUE8L3RleHQ+CiAgPHRleHQgeD0iMjUiIHk9IjYwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0id2hpdGUiPk1vY2sgU2VhdCBBbGxvY2F0aW9uIEF1dGhvcml0eTwvdGV4dD4KPC9zdmc+" alt="MoSAA Logo">
+    </div>
+    <div class="header-text">
+      <h1>Mock Seat Allocation Authority 2025</h1>
+      <p>Seat Allocation experience for Engineering aspirants</p>
+    </div>
+    <div class="help-section">
+      <span class="help-icon">⊕</span>
+      <span>Counselling Help</span>
+    </div>
+  </div>
+  
+  <!-- Navigation Bar -->
+  <div class="nav-bar">
+    <div class="home-btn">
+      <a href="#home">Home</a>
+    </div>
+    <div class="welcome-dropdown">
+      <button onclick="toggleDropdown()" class="dropbtn">Welcome Your Name</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#changepassword">Change Password</a>
+        <a href="#logout">Logout</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Application Info -->
+  <div class="app-info">
+    JEE MAINS/ADV APPLICATION NO: {your application no.}
+  </div>
+  
+  <!-- Menu Section -->
+  <div class="menu">
+    <a href="#profile" class="menu-item">Candidate Profile</a>
+    <a href="#choices" class="menu-item active">Choice Available</a>
+    <a href="#filling" class="menu-item">Choice Filling</a>
+    <a href="#locking" class="menu-item">Choice Locking</a>
+    <a href="#mock" class="menu-item">View Mock Seat Allocation</a>
+    <a href="#print" class="menu-item">Print Filled Choice(s) Letter</a>
+  </div>
+  
+  <!-- Main Content Area -->
+  <div class="content-area">
+    <!-- Filter Section -->
+    <div class="filter-section">
+      <h2>View Available Choice(s)</h2>
+      <div class="filter-row">
+        <select id="institute-type">
+          <option value="">All Institute Types</option>
+          <option value="iit">IITs</option>
+          <option value="nit">NITs</option>
+          <option value="iiit">IIITs</option>
+          <option value="gfti">GFTIs</option>
+        </select>
+        <select id="institute">
+          <option value="">All Institutes</option>
+          <!-- Will be populated by JS -->
+        </select>
+        <select id="program">
+          <option value="">All Programs</option>
+          <!-- Will be populated by JS -->
+        </select>
+      </div>
+      <div class="filter-row">
+        <input type="text" id="search-field" placeholder="Enter institute or program name to Search and Filter">
+      </div>
+      <div class="filter-buttons">
+        <button class="btn btn-success" id="filter-btn">Filter</button>
+        <button class="btn btn-danger" id="clear-filter-btn">Clear All Filter</button>
+      </div>
+    </div>
+    
+    <!-- Simulator Section -->
+    <div class="simulator-section">
+      <div class="step active" id="step1">
+        <h2>JoSAA Seat Allocation Simulator</h2>
+        <p>Use this simulator to predict your seat allocation based on your JEE rank and choice preferences.</p>
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="number" id="rank" placeholder="Your JEE Main Rank">
+        <button onclick="goToStep(2)" class="btn btn-primary">Next</button>
+      </div>
 
+      <div class="step" id="step2">
+        <h2>Choice Filling</h2>
+        <select id="choiceSelect">
+          <!-- Options will be populated by JS -->
+        </select>
+        <button onclick="addChoice()" class="btn btn-primary">Add to Priority List</button>
+
+        <h3>Your Priority List</h3>
+        <ul id="priorityList" class="priority-list"></ul>
+
+        <button onclick="simulateAllotment()" class="btn btn-success">Simulate Allotment</button>
+      </div>
+
+      <div class="step" id="step3">
+        <h2>Allotment Result</h2>
+        <div class="result" id="resultBox"></div>
+        <button onclick="goToStep(1)" class="btn btn-primary">Start Over</button>
+      </div>
+    </div>
+    
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <button class="btn btn-primary">Save and Continue</button>
+      <button class="btn btn-primary">Save and Go to Home</button>
+    </div>
+  </div>
+  
+  <!-- Footer Section -->
+  <div class="footer">
+    <div class="download-section">
+      <a href="#" id="download-predictor">DOWNLOAD THE PREDICTOR FILE</a>
+      <p>If the above link doesn't work, you can extract it from my repository on GitHub.</p>
+    </div>
+    <div class="note">
+      NOTE: I am just doing it to reduce work :) Your counselling will happen on this page only in JoSAA....
+    </div>
+    <div class="important-note">
+      IMPORTANT: THIS WEBSITE IS BY NO MEANS, MADE FOR MISINFORMATION OR FRAUD. IT'S SOLE PURPOSE IS TO MAKE PEOPLE AWARE OF HOW THE COUNSELLING PROCESS LOOKS LIKE, WHERE TO CLICK AND ALL THAT.
+    </div>
+  </div>
+  
+  <script>
+    // Toggle dropdown function
+    function toggleDropdown() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if clicked outside
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    
+    // Simulator Data and Functions
+    const data = [
+        ["IIT Gandhinagar", "CH", 1151, 2719],
+["IIT Gandhinagar", "IT", 810, 1892],
+["IIT Gandhinagar", "EE", 2643, 3657],
+["IIT Bhubaneswar", "ME", 1578, 4437],
+["IIT Bhubaneswar", "IT", 2287, 4588],
+["IIT Bhubaneswar", "CE", 1429, 2411],
+["IIT Bhubaneswar", "EP", 846, 2676],
+["IIT Madras", "IT", 1584, 2385],
+["IIT Madras", "ECE", 1957, 3333],
+["IIT Madras", "ME", 2364, 5285],
+["IIT Guwahati", "EE", 1190, 3999],
+["IIT Guwahati", "CH", 1254, 3713],
+["IIT Guwahati", "MSE", 1155, 3908],
+["IIT Indore", "CH", 443, 1115],
+["IIT Indore", "MSE", 2044, 3943],
+["IIT Indore", "ME", 1277, 3521],
+["IIT Kanpur", "CSE", 2250, 3769],
+["IIT Kanpur", "EE", 1957, 2589],
+["IIT Kanpur", "ME", 1554, 2667],
+["IIT Kanpur", "CH", 2923, 5128],
+["IIT Jodhpur", "DSAI", 593, 2049],
+["IIT Jodhpur", "EE", 1755, 3489],
+["IIT Jodhpur", "EP", 102, 2133],
+["IIT Jodhpur", "CE", 2343, 3562],
+["IIT Jodhpur", "IT", 1841, 2920],
+["IIT Kharagpur", "ME", 1798, 3812],
+["IIT Kharagpur", "CE", 2626, 4942],
+["IIT Kharagpur", "EP", 2227, 3962],
+["IIT Kharagpur", "DSAI", 877, 2733],
+["IIT Hyderabad", "CH", 1356, 3215],
+["IIT Hyderabad", "EP", 604, 2626],
+["IIT Hyderabad", "ECE", 1082, 2100],
+["IIT Hyderabad", "IT", 1940, 3052],
+["IIT Hyderabad", "MSE", 1245, 2909],
+["IIT Bombay", "EE", 1997, 4103],
+["IIT Bombay", "EP", 2821, 4847],
+["IIT Bombay", "CE", 558, 2813],
+["IIT Bombay", "CSE", 318, 1056],
+["IIT Bombay", "ECE", 1952, 2705],
+["IIT Bombay", "CH", 1671, 3622],
+["IIT Patna", "ECE", 99, 1453],
+["IIT Patna", "EE", 347, 2676],
+["IIT Patna", "CSE", 1985, 4223],
+["IIT Patna", "ME", 244, 1081],
+["IIT Patna", "CE", 1618, 3767],
+["IIT Patna", "IT", 34, 2943],
+["IIT Delhi", "ECE", 1327, 3783],
+["IIT Delhi", "EE", 2746, 4760],
+["IIT Delhi", "EP", 2554, 4097],
+["IIT Delhi", "ME", 992, 2451],
+["IIT Delhi", "IT", 813, 2313],
+["IIT Delhi", "CSE", 619, 2046],
+["IIT Ropar", "CSE", 493, 2718],
+["IIT Ropar", "ME", 1058, 1841],
+["IIT Ropar", "MSE", 137, 1510],
+["IIT Ropar", "ECE", 183, 685],
+["IIT Mandi", "DSAI", 1807, 4298],
+["IIT Mandi", "CE", 218, 1658],
+["IIT Mandi", "IT", 2515, 4445],
+["IIT Mandi", "ECE", 1127, 3779],
+["IIT Mandi", "ME", 2369, 4469],
+["IIT Mandi", "MSE", 2631, 4644],
+["IIT Roorkee", "EP", 2577, 3365],
+["IIT Roorkee", "CSE", 109, 2096],
+["IIT Roorkee", "DSAI", 1534, 3239],
+["IIT Roorkee", "ECE", 2611, 5232],
+["IIT Roorkee", "ME", 1350, 3749],
+["IIT BHU", "DSAI", 1246, 2945],
+["IIT BHU", "EP", 2359, 5047],
+["IIT BHU", "ME", 2509, 3244],
+["IIT BHU", "CH", 1429, 3641],
+["IIT BHU", "MSE", 634, 2890],
+["IIT BHU", "CSE", 2979, 3909],
+["IIT Jammu", "DSAI", 1620, 3290],
+["IIT Jammu", "EE", 1690, 4050],
+["IIT Jammu", "EP", 2925, 5710],
+["IIT Jammu", "ME", 1115, 1767],
+["IIT Jammu", "ECE", 1824, 4218],
+["IIT Jammu", "CE", 1307, 1921],
+["IIT Palakkad", "CH", 1877, 3323],
+["IIT Palakkad", "EP", 1924, 2677],
+["IIT Palakkad", "CE", 2108, 4494],
+["IIT Tirupati", "CSE", 2461, 3772],
+["IIT Tirupati", "ECE", 719, 2196],
+["IIT Tirupati", "DSAI", 2448, 5422],
+["IIT Tirupati", "EP", 2882, 3468],
+["IIT Goa", "MSE", 2676, 5125],
+["IIT Goa", "CH", 2279, 4816],
+["IIT Goa", "ECE", 1572, 2240],
+["IIT Bhilai", "ME", 965, 2732],
+["IIT Bhilai", "DSAI", 1190, 3285],
+["IIT Bhilai", "CE", 1966, 2915],
+["IIT Bhilai", "MSE", 210, 2807],
+["IIT Bhilai", "IT", 244, 2291],
+["IIT Dharwad", "EE", 1181, 3642],
+["IIT Dharwad", "IT", 1855, 3033],
+["IIT Dharwad", "ECE", 119, 1401],
+["IIT Dharwad", "DSAI", 2013, 3655],
+["IIT ISM Dhanbad", "DSAI", 1533, 2550],
+["IIT ISM Dhanbad", "EE", 2389, 4148],
+["IIT ISM Dhanbad", "EP", 2482, 3206],
+["IIT ISM Dhanbad", "CSE", 2536, 3127],
+["IIT ISM Dhanbad", "CE", 269, 3239],
+["IIT ISM Dhanbad", "CH", 931, 3672],
+      ["NIT Trichy", "CSE", 412, 1028],
+      ["NIT Surathkal", "CSE", 468, 1233],
+      ["NIT Warangal", "CSE", 511, 1211],
+      ["NIT Calicut", "CSE", 919, 1957],
+      ["NIT Nagpur", "CSE", 1174, 2502],
+      ["NIT Rourkela", "CSE", 1427, 2563],
+      ["NIT Durgapur", "CSE", 2191, 4363],
+      ["NIT Jaipur", "CSE", 1804, 3883],
+      ["NIT Jalandhar", "CSE", 2342, 4622],
+      ["NIT Kurukshetra", "CSE", 2441, 4519],
+      ["NIT Silchar", "CSE", 3135, 5336],
+      ["NIT Hamirpur", "CSE", 3386, 5707],
+      ["NIT Patna", "CSE", 3788, 6429],
+      ["NIT Raipur", "CSE", 3743, 6736],
+      ["NIT Agartala", "CSE", 4463, 7202],
+      ["NIT Srinagar", "CSE", 7966, 11349],
+      ["NIT Goa", "CSE", 2063, 4410],
+      ["NIT Manipur", "CSE", 8875, 12801],
+      ["NIT Meghalaya", "CSE", 7813, 12260],
+      ["NIT Mizoram", "CSE", 9377, 13776],
+      ["NIT Nagaland", "CSE", 9419, 14135],
+      ["NIT Puducherry", "CSE", 3526, 6207],
+      ["NIT Sikkim", "CSE", 8254, 12391],
+      ["NIT Uttarakhand", "CSE", 6400, 10991],
+      ["NIT Arunachal Pradesh", "CSE", 9104, 13527],
+      ["NIT Andhra Pradesh", "CSE", 3504, 6573],
+      ["IIT Bombay", "CSE", 1, 123],
+      ["IIT Delhi", "CSE", 5, 145],
+      ["IIT Madras", "CSE", 3, 156],
+      ["IIT Kanpur", "CSE", 20, 198],
+      ["IIT Kharagpur", "CSE", 35, 236],
+          ["IIIT Gwalior", "Materials Science and Engineering", 1315, 3712],
+    ["IIIT Gwalior", "Engineering Physics", 2771, 3921],
+    ["IIIT Gwalior", "Electronics and Communication Engineering", 578, 1290],
+    ["IIIT Gwalior", "Civil Engineering", 1240, 1815],
+    ["IIIT Allahabad", "Mechanical Engineering", 785, 2220],
+    ["IIIT Allahabad", "Electronics and Communication Engineering", 2131, 3582],
+    ["IIIT Allahabad", "Electrical Engineering", 1575, 3356],
+    ["IIIT Allahabad", "Engineering Physics", 516, 2082],
+    ["IIIT Allahabad", "Chemical Engineering", 1847, 3378],
+    ["IIIT Allahabad", "Computer Science and Engineering", 1744, 3155],
+    ["IIIT Jabalpur", "Materials Science and Engineering", 2844, 5159],
+    ["IIIT Jabalpur", "Civil Engineering", 1191, 1825],
+    ["IIIT Jabalpur", "Electrical Engineering", 1105, 2652],
+    ["IIIT Jabalpur", "Data Science and AI", 2605, 5467],
+    ["IIIT Kancheepuram", "Information Technology", 2426, 3351],
+    ["IIIT Kancheepuram", "Civil Engineering", 184, 900],
+    ["IIIT Kancheepuram", "Electronics and Communication Engineering", 2638, 4570],
+    ["IIIT Sri City, Chittoor", "Civil Engineering", 2001, 4842],
+    ["IIIT Sri City, Chittoor", "Materials Science and Engineering", 442, 1290],
+    ["IIIT Sri City, Chittoor", "Mechanical Engineering", 2458, 4163],
+    ["IIIT Sri City, Chittoor", "Information Technology", 12, 1792],
+    ["IIIT Guwahati", "Data Science and AI", 1252, 2870],
+    ["IIIT Guwahati", "Chemical Engineering", 2825, 3796],
+    ["IIIT Guwahati", "Civil Engineering", 713, 3644],
+    ["IIIT Guwahati", "Electrical Engineering", 1282, 4082],
+    ["IIIT Guwahati", "Mechanical Engineering", 2337, 2856],
+    ["IIIT Vadodara", "Civil Engineering", 1916, 3384],
+    ["IIIT Vadodara", "Chemical Engineering", 926, 2407],
+    ["IIIT Vadodara", "Electronics and Communication Engineering", 1395, 3274],
+    ["IIIT Vadodara", "Electrical Engineering", 1365, 2447],
+    ["IIIT Vadodara", "Data Science and AI", 1849, 3828],
+    ["IIIT Kota", "Mechanical Engineering", 1748, 3217],
+    ["IIIT Kota", "Chemical Engineering", 398, 3012],
+    ["IIIT Kota", "Engineering Physics", 2925, 5004],
+    ["IIIT Srirangam", "Computer Science and Engineering", 1622, 3084],
+    ["IIIT Srirangam", "Materials Science and Engineering", 366, 3207],
+    ["IIIT Srirangam", "Electrical Engineering", 781, 1869],
+    ["IIIT Srirangam", "Mechanical Engineering", 181, 2920],
+    ["IIIT Una", "Electronics and Communication Engineering", 1831, 3857],
+    ["IIIT Una", "Information Technology", 1572, 3117],
+    ["IIIT Una", "Data Science and AI", 2248, 2925],
+    ["IIIT Una", "Mechanical Engineering", 2846, 3376],
+    ["IIIT Sonepat", "Engineering Physics", 127, 3121],
+    ["IIIT Sonepat", "Civil Engineering", 1710, 2364],
+    ["IIIT Sonepat", "Electronics and Communication Engineering", 947, 3837],
+    ["IIIT Sonepat", "Mechanical Engineering", 431, 2984],
+    ["IIIT Sonepat", "Chemical Engineering", 393, 2198],
+    ["IIIT Sonepat", "Electrical Engineering", 2524, 4313],
+    ["IIIT Kalyani", "Materials Science and Engineering", 866, 2113],
+    ["IIIT Kalyani", "Chemical Engineering", 2235, 3728],
+    ["IIIT Kalyani", "Electrical Engineering", 857, 2033],
+    ["IIIT Kalyani", "Data Science and AI", 511, 2627],
+    ["IIIT Lucknow", "Materials Science and Engineering", 2511, 4492],
+    ["IIIT Lucknow", "Chemical Engineering", 2456, 4246],
+    ["IIIT Lucknow", "Civil Engineering", 921, 3499],
+    ["IIIT Lucknow", "Data Science and AI", 2872, 5703],
+    ["IIIT Lucknow", "Electronics and Communication Engineering", 1478, 3688],
+    ["IIIT Lucknow", "Engineering Physics", 2915, 3418],
+    ["IIIT Dharwad", "Information Technology", 2109, 3914],
+    ["IIIT Dharwad", "Engineering Physics", 2085, 3399],
+    ["IIIT Dharwad", "Mechanical Engineering", 1025, 2094],
+    ["IIIT Kurnool", "Civil Engineering", 2494, 4613],
+    ["IIIT Kurnool", "Information Technology", 1382, 1937],
+    ["IIIT Kurnool", "Electrical Engineering", 502, 3391],
+    ["IIIT Kurnool", "Engineering Physics", 397, 2817],
+    ["IIIT Kurnool", "Computer Science and Engineering", 2997, 5019],
+    ["IIIT Kottayam", "Mechanical Engineering", 358, 1891],
+    ["IIIT Kottayam", "Computer Science and Engineering", 2831, 3871],
+    ["IIIT Kottayam", "Electronics and Communication Engineering", 2109, 4443],
+    ["IIIT Kottayam", "Chemical Engineering", 176, 1066],
+    ["IIIT Manipur", "Materials Science and Engineering", 1290, 1999],
+    ["IIIT Manipur", "Engineering Physics", 6, 1194],
+    ["IIIT Manipur", "Computer Science and Engineering", 976, 3300],
+    ["IIIT Manipur", "Data Science and AI", 2844, 5325],
+    ["IIIT Manipur", "Information Technology", 1724, 3507],
+    ["IIIT Nagpur", "Information Technology", 1683, 3800],
+    ["IIIT Nagpur", "Data Science and AI", 324, 1517],
+    ["IIIT Nagpur", "Civil Engineering", 1612, 3615],
+    ["IIIT Nagpur", "Computer Science and Engineering", 627, 2619],
+    ["IIIT Nagpur", "Electronics and Communication Engineering", 2300, 3165],
+    ["IIIT Pune", "Materials Science and Engineering", 935, 2691],
+    ["IIIT Pune", "Civil Engineering", 1129, 2052],
+    ["IIIT Pune", "Computer Science and Engineering", 724, 2179],
+    ["IIIT Pune", "Engineering Physics", 2078, 3759],
+    ["IIIT Pune", "Chemical Engineering", 293, 1508],
+    ["IIIT Ranchi", "Information Technology", 104, 2378],
+    ["IIIT Ranchi", "Computer Science and Engineering", 2260, 4478],
+    ["IIIT Ranchi", "Electronics and Communication Engineering", 1262, 3418],
+    ["IIIT Ranchi", "Civil Engineering", 705, 2582]
+
+    ];
+
+    const priorityList = [];
+
+    function goToStep(step) {
+      document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+      document.getElementById(`step${step}`).classList.add('active');
+    }
+
+    // Populate institutes dropdown
+    const institutes = [...new Set(data.map(item => item[0]))].sort();
+    const instituteSelect = document.getElementById("institute");
+    institutes.forEach(inst => {
+      const option = document.createElement("option");
+      option.value = inst;
+      option.text = inst;
+      instituteSelect.appendChild(option);
+    });
+
+    // Populate programs dropdown
+    const programs = [...new Set(data.map(item => item[1]))].sort();
+    const programSelect = document.getElementById("program");
+    programs.forEach(prog => {
+      const option = document.createElement("option");
+      option.value = prog;
+      option.text = prog;
+      programSelect.appendChild(option);
+    });
+
+    // Populate simulator dropdown
+    const select = document.getElementById("choiceSelect");
+    if (select) {
+      data.forEach((d, i) => {
+        const option = document.createElement("option");
+        option.value = i;
+        option.text = `${d[0]} - ${d[1]} (Ranks: ${d[2]}-${d[3]})`;
+        select.appendChild(option);
+      });
+    }
+
+    function addChoice() {
+      const select = document.getElementById("choiceSelect");
+      const index = parseInt(select.value);
+      const choice = data[index];
+
+      if (priorityList.includes(index)) {
+        alert("Already added!");
+        return;
+      }
+
+      priorityList.push(index);
+      updatePriorityList();
+    }
+
+    function updatePriorityList() {
+      const list = document.getElementById("priorityList");
+      list.innerHTML = "";
+
+      priorityList.forEach((i, pos) => {
+        const li = document.createElement("li");
+        li.textContent = `${pos + 1}. ${data[i][0]} - ${data[i][1]} (Ranks: ${data[i][2]}-${data[i][3]})`;
+
+        const removeBtn = document.createElement("button");
+        removeBtn.textContent = "Remove";
+        removeBtn.className = "btn btn-danger";
+        removeBtn.style.marginLeft = "10px";
+        removeBtn.onclick = () => {
+          priorityList.splice(pos, 1);
+          updatePriorityList();
+        };
+
+        li.appendChild(removeBtn);
+        list.appendChild(li);
+      });
+    }
+
+    function simulateAllotment() {
+      const rank = parseInt(document.getElementById("rank").value);
+      let result = "Better luck next time. No seat allotted.";
+
+      for (const i of priorityList) {
+        const [inst, branch, open, close] = data[i];
+        if (rank >= open && rank <= close) {
+          result = `🎉 Congratulations! You got <strong>${inst} - ${branch}</strong> (Cutoff: ${open}-${close})`;
+          break;
+        }
+      }
+
+      document.getElementById("resultBox").innerHTML = result;
+      goToStep(3);
+    }
+
+    // Filter functionality
+    document.getElementById("filter-btn").addEventListener("click", function() {
+      // This would apply filters in a real application
+      alert("Filters applied!");
+    });
+
+    document.getElementById("clear-filter-btn").addEventListener("click", function() {
+      document.getElementById("institute-type").value = "";
+      document.getElementById("institute").value = "";
+      document.getElementById("program").value = "";
+      document.getElementById("search-field").value = "";
+      // This would clear filters in a real application
+      alert("Filters cleared!");
+    });
+
+    // Predictor Download
+    document.getElementById("download-predictor").addEventListener("click", function(e) {
+      e.preventDefault();
+      alert("The predictor file would download here in a real application.");
+    });
+  </script>
 </body>
 </html>
